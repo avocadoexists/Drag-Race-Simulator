@@ -96,17 +96,17 @@ function miniChallenge() {
     //deal with maxi chalenges:
     let challenges = ["actingChallenge()", "comedyChallenge()", "danceChallenge()", "designChallenge()", "improvChallenge()", "marketingChallenge()"];
     //remove from possible challenges list:
-    if (actingChallengeCounter == 6)
+    if (actingChallengeCounter == 3)
         challenges.splice(challenges.indexOf("actingChallenge()"), 1);
-    if (comedyChallengeCounter == 6)
+    if (comedyChallengeCounter == 3)
         challenges.splice(challenges.indexOf("comedyChallenge()"), 1);
-    if (marketingChallengeCounter == 6)
+    if (marketingChallengeCounter == 3)
         challenges.splice(challenges.indexOf("marketingChallenge()"), 1);
-    if (danceChallengeCounter == 5)
+    if (danceChallengeCounter == 2)
         challenges.splice(challenges.indexOf("danceChallenge()"), 1);
-    if (designChallengeCounter == 6)
+    if (designChallengeCounter == 3)
         challenges.splice(challenges.indexOf("designChallenge()"), 1);
-    if (improvChallengeCounter == 6)
+    if (improvChallengeCounter == 3)
         challenges.splice(challenges.indexOf("improvChallenge()"), 1);
     createChallenge(challenges, miniChallengeScreen);
 }
@@ -3461,8 +3461,8 @@ function generateSpace() {
     castSelection.innerHTML = '';
     if (totalCastSize < 3)
         window.alert("Please, use at least 3 queens on your cast!");
-    else if (totalCastSize > 30)
-        window.alert("Please, use less than 30 queens in your cast!");
+    else if (totalCastSize > 20)
+        window.alert("Please, use less than 20 queens in your cast!");
     else
         for (let i = 0; i < castSize; i++) {
             let select = document.createElement("select");
