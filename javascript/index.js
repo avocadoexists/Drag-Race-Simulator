@@ -96,17 +96,17 @@ function miniChallenge() {
     //deal with maxi chalenges:
     let challenges = ["actingChallenge()", "comedyChallenge()", "danceChallenge()", "designChallenge()", "improvChallenge()", "marketingChallenge()"];
     //remove from possible challenges list:
-    if (actingChallengeCounter == 3)
+    if (actingChallengeCounter == 6)
         challenges.splice(challenges.indexOf("actingChallenge()"), 1);
-    if (comedyChallengeCounter == 3)
+    if (comedyChallengeCounter == 6)
         challenges.splice(challenges.indexOf("comedyChallenge()"), 1);
-    if (marketingChallengeCounter == 3)
+    if (marketingChallengeCounter == 6)
         challenges.splice(challenges.indexOf("marketingChallenge()"), 1);
-    if (danceChallengeCounter == 2)
+    if (danceChallengeCounter == 5)
         challenges.splice(challenges.indexOf("danceChallenge()"), 1);
-    if (designChallengeCounter == 3)
+    if (designChallengeCounter == 6)
         challenges.splice(challenges.indexOf("designChallenge()"), 1);
-    if (improvChallengeCounter == 3)
+    if (improvChallengeCounter == 6)
         challenges.splice(challenges.indexOf("improvChallenge()"), 1);
     createChallenge(challenges, miniChallengeScreen);
 }
